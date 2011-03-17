@@ -1,0 +1,104 @@
+﻿@model IEnumerable<Example.Models.DutchUser>
+
+<h2>Dutch Example</h2>
+<p>Example showing some Dutch custom datasources</p>
+<fieldset id="output">
+    <legend>Output</legend>
+    <table id="outputTable">
+        <tr>
+            <th>
+                Firstname
+            </th>
+            <th>
+                Middlename
+            </th>
+            <th>
+                Lastname
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Telephone
+            </th>
+            <th>
+                Mobile
+            </th>
+            <th>
+                City
+            </th>
+            <th>
+                Postal
+            </th>            
+        </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @item.Firstname
+            </td>
+            <td>
+                @item.Middlename
+            </td>
+            <td>
+                @item.Lastname
+            </td>
+            <td>
+                @item.Email
+            </td>
+            <td>
+                @item.Telephone
+            </td>
+            <td>
+                @item.Mobile
+            </td>
+            <td>
+                @item.City
+            </td>    
+            <td>
+                @item.Postal
+            </td>         
+        </tr>
+    }
+    </table>
+</fieldset>
+<fieldset id="code">
+    <legend>Code</legend>
+    <pre><h3>Class:</h3>
+public class DutchUser
+{
+    public string Firstname { get; set; }
+    public string Middlename { get; set; }
+    public string Lastname { get; set; }
+    public string Email { get; set; }
+    public string Telephone { get; set; }
+    public string Mobile { get; set; }
+    public string City { get; set; }
+    public string Postal { get; set; }
+}
+
+<h3>AutoPoco:</h3>
+// Create factory for poco's and setup datasources
+var pocoFactory = AutoPocoContainer.Configure(x =>
+{
+    x.Conventions(c => c.UseDefaultConventions());
+    x.AddFromAssemblyContainingType&lt;DutchUser&gt;();
+    x.Include&lt;DutchUser&gt;()
+        .Setup(c => c.Firstname).Use&lt;FirstNameSource&gt;()
+        .Setup(c => c.Middlename).Use&lt;DutchMiddlenameSource&gt;()
+        .Setup(c => c.Lastname).Use&lt;LastNameSource&gt;()
+        .Setup(c => c.Email).Use&lt;ExtendedEmailAddressSource&gt;()
+        .Setup(c => c.Telephone).Use&lt;DutchTelephoneSource&gt;()
+        .Setup(c => c.Mobile).Use&lt;DutchMobileSource&gt;()
+        .Setup(c => c.City).Use&lt;DutchCitySource&gt;()
+        .Setup(c => c.Postal).Use&lt;DutchPostalSource&gt;();
+});
+
+// Get session from factory
+var pocoSession = pocoFactory.CreateSession();
+
+// Get ten dutch users
+var dutchUser = pocoSession.List&lt;DutchUser&gt;(10).Get();
+    </pre>
+</fieldset>
+

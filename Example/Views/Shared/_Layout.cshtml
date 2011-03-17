@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>AutoPoco Examples</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="page">
+
+        <div id="header">
+            <div id="title">
+                <h1>AutoPoco Examples</h1>
+            </div>
+
+            <div id="logindisplay">
+                &nbsp;
+            </div>
+
+            <div id="menucontainer">
+
+                <ul id="menu">
+                    <li>@Html.ActionLink("Basic example", "Basic", "Home")</li>
+                    <li>@Html.ActionLink("Custom example", "Custom", "Home")</li>
+                    <li>@Html.ActionLink("Value types example", "ValueTypes", "Home")</li>
+                    <li>@Html.ActionLink("Dutch example", "Dutch", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div id="main">
+            @RenderBody()
+            <div id="footer">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

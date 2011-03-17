@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example\Example.csproj", "{F266BB00-7B1C-4DB0-9654-FCDBE5E8E003}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datasources", "Datasources\Datasources.csproj", "{9582A5BE-A9F8-43DD-B4EA-15883AD667C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F266BB00-7B1C-4DB0-9654-FCDBE5E8E003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F266BB00-7B1C-4DB0-9654-FCDBE5E8E003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F266BB00-7B1C-4DB0-9654-FCDBE5E8E003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F266BB00-7B1C-4DB0-9654-FCDBE5E8E003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9582A5BE-A9F8-43DD-B4EA-15883AD667C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9582A5BE-A9F8-43DD-B4EA-15883AD667C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9582A5BE-A9F8-43DD-B4EA-15883AD667C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9582A5BE-A9F8-43DD-B4EA-15883AD667C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
