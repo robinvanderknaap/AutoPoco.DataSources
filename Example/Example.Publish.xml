@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Users\robink\Documents\My Dropbox\AspNetProjects2010\AutoPocoDatasourcesLive" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="AutoPocoDatasources" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="03/18/2011 00:47:42" />
+    <file relUrl="bin/Example.pdb" publishTime="03/18/2011 00:46:23" />
+    <file relUrl="Views/Home/Custom.cshtml" publishTime="03/03/2011 00:00:19" />
+    <file relUrl="Views/Shared/_Layout.cshtml" publishTime="03/02/2011 23:14:14" />
+    <file relUrl="bin/Example.dll" publishTime="03/18/2011 00:46:23" />
+    <file relUrl="Views/Home/Dutch.cshtml" publishTime="03/03/2011 00:03:29" />
+    <file relUrl="Views/Home/ValueTypes.cshtml" publishTime="03/03/2011 00:02:59" />
+    <file relUrl="Content/WP-logo-oomph.jpg" publishTime="03/02/2011 23:48:08" />
+    <file relUrl="bin/Datasources.dll" publishTime="03/18/2011 00:46:20" />
+    <file relUrl="Views/Web.config" publishTime="02/27/2011 00:04:06" />
+    <file relUrl="Views/Home/About.cshtml" publishTime="03/18/2011 00:45:00" />
+    <file relUrl="Views/_ViewStart.cshtml" publishTime="02/27/2011 00:04:06" />
+    <file relUrl="bin/AutoPoco.dll" publishTime="02/15/2011 00:17:50" />
+    <file relUrl="Views/Shared/Error.cshtml" publishTime="02/27/2011 00:04:06" />
+    <file relUrl="Global.asax" publishTime="02/27/2011 00:04:06" />
+    <file relUrl="Views/Home/Basic.cshtml" publishTime="03/17/2011 23:02:50" />
+    <file relUrl="Content/Site.css" publishTime="03/02/2011 22:04:42" />
+    <file relUrl="bin/Datasources.pdb" publishTime="03/18/2011 00:46:20" />
+  </publishProfile>
+</publishData>
