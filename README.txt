@@ -1,0 +1,1 @@
+Additional datasources for AutoPoco. Also contains an asp.net mvc 3 sample app showing basic usage.
