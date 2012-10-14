@@ -18,7 +18,7 @@ namespace AutoPoco.DataSources
 
         public override string Next(IGenerationContext context)
         {
-            return string.Format("{0}{1}@{2}", FirstNames[_random.Next(0, FirstNames.Length)], _index++, string.IsNullOrWhiteSpace(_domain) ? Domains[_random.Next(0, Domains.Length)] : _domain);
+            return string.Format("{0}{1}@{2}", FirstNames[_random.Next(0, FirstNames.Length)], _index++, string.IsNullOrEmpty(_domain.Trim()) ? Domains[_random.Next(0, Domains.Length)] : _domain.Trim());
         }
 
         private static readonly string[] Domains = new[]

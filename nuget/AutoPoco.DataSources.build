@@ -12,7 +12,7 @@
     <Target Name="Build" DependsOnTargets="Clean;Rebuild">
 		<Copy
             SourceFiles="../src/AutoPoco.DataSources/bin/Release/AutoPoco.DataSources.dll"
-            DestinationFiles="./Package/lib/net40/AutoPoco.DataSources.dll"
+            DestinationFiles="./Package/lib/net35/AutoPoco.DataSources.dll"
         />
 	</Target>
 </Project>
