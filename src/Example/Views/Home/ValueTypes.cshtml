@@ -1,0 +1,96 @@
+﻿@model IEnumerable<Example.Models.PocoLoco>
+
+<h2>Value Types Example</h2>
+<p>Example using custom datasources created for various value types. Notice minimum and maximum values are set for each datasource, except for BooleanSource</p>
+<fieldset id="output">
+    <legend>Output</legend>
+    <table id="outputTable">
+        <tr>
+            <th>
+                Some int
+            </th>
+            <th>
+                Some float
+            </th>
+            <th>
+                Some double
+            </th>
+            <th>
+                Some decimal
+            </th>
+            <th>
+                Some datetime
+            </th>
+            <th>
+                Some timespan
+            </th>
+            <th>
+                Some boolean
+            </th>            
+        </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @item.SomeInt
+            </td>
+            <td>
+                @item.SomeFloat.ToString("0.00")
+            </td>
+            <td>
+                @item.SomeDouble.ToString("0.00")
+            </td>
+            <td>
+                @item.SomeDecimal.ToString("0.00")
+            </td>
+            <td>
+                @item.SomeDateTime
+            </td>
+            <td>
+                @item.SomeTimeSpan
+            </td>
+            <td>
+                @item.SomeBool
+            </td>            
+        </tr>
+    }
+    </table>
+</fieldset>
+<fieldset id="code">
+    <legend>Code</legend>
+    <pre><h3>Class:</h3>
+public class PocoLoco
+{
+    public int SomeInt { get; set; }
+    public float SomeFloat { get; set; }
+    public double SomeDouble { get; set; }
+    public decimal SomeDecimal { get; set; }
+    public DateTime SomeDateTime { get; set; }
+    public TimeSpan SomeTimeSpan { get; set; }
+    public bool SomeBool { get; set; }
+}
+
+<h3>AutoPoco:</h3>
+// Create factory for poco's and setup datasources
+var pocoFactory = AutoPocoContainer.Configure(x =>
+{
+    x.Conventions(c => c.UseDefaultConventions());
+    x.AddFromAssemblyContainingType&lt;PocoLoco&gt;();
+    x.Include&lt;PocoLoco&gt;()
+        .Setup(c => c.SomeInt).Use&lt;IntegerSource&gt;(100, 500)
+        .Setup(c => c.SomeFloat).Use&lt;FloatSource&gt;(10, 50)
+        .Setup(c => c.SomeDouble).Use&lt;DoubleSource&gt;(60, 5000)
+        .Setup(c => c.SomeDecimal).Use&lt;DecimalSource&gt;(-50m, -30m)
+        .Setup(c => c.SomeDateTime).Use&lt;DateTimeSource&gt;(DateTime.Now, DateTime.Now.AddYears(1))
+        .Setup(c => c.SomeBool).Use&lt;BooleanSource&gt;()
+        .Setup(c => c.SomeTimeSpan).Use&lt;TimeSpanSource&gt;(TimeSpan.Zero, TimeSpan.FromHours(10));
+});
+
+// Get session from factory
+var pocoSession = pocoFactory.CreateSession();
+
+// Get ten pocoloco's
+var pocoLoco = pocoSession.List&lt;PocoLoco&gt;(10).Get();
+    </pre>
+</fieldset>
+
