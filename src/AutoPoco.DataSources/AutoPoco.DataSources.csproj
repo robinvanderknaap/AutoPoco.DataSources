@@ -55,6 +55,7 @@
     <Compile Include="FloatSource.cs" />
     <Compile Include="IntegerSource.cs" />
     <Compile Include="DutchMiddlenameSource.cs" />
+    <Compile Include="Properties\SharedAssemblyInfo.cs" />
     <Compile Include="StreetSource.cs" />
     <Compile Include="PostalSource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
