@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoPoco.DataSources", "src
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B1F8D981-7CDD-42D6-978E-ABBA53337478}"
 	ProjectSection(SolutionItems) = preProject
+		build\AutoPoco.DataSources.build = build\AutoPoco.DataSources.build
+		build\nuget\AutoPoco.DataSources.nuspec = build\nuget\AutoPoco.DataSources.nuspec
 		SharedAssemblyInfo.cs = SharedAssemblyInfo.cs
 	EndProjectSection
 EndProject

@@ -40,6 +40,9 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="BooleanSource.cs" />
     <Compile Include="CitySource.cs" />
     <Compile Include="CompanySource.cs" />
@@ -55,7 +58,6 @@
     <Compile Include="FloatSource.cs" />
     <Compile Include="IntegerSource.cs" />
     <Compile Include="DutchMiddlenameSource.cs" />
-    <Compile Include="Properties\SharedAssemblyInfo.cs" />
     <Compile Include="StreetSource.cs" />
     <Compile Include="PostalSource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
