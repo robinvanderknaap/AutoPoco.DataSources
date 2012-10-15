@@ -83,11 +83,10 @@ using System.Runtime.InteropServices;
 //
 //      Major Version
 //      Minor Version 
-//      Revision
 //      Build
 //
-// Version should always be 0.0.0.0, version number is determined by build server
-[assembly: AssemblyVersion("0.0.0.0")]
-[assembly: AssemblyFileVersion("0.0.0.0")]
+// Version should always be 0.0.0, version number is determined by build server
+[assembly: AssemblyVersion("0.0.0")]
+[assembly: AssemblyFileVersion("0.0.0")]
 
  
