@@ -2,6 +2,7 @@
 <package >
   <metadata>
     <id>AutoPoco.DataSources</id>
+	<version>1.0</version>
     <authors>Robin van der Knaap</authors>
     <owners>Robin van der Knaap</owners>
     <licenseUrl>https://github.com/robinvanderknaap/AutoPoco.DataSources</licenseUrl>
