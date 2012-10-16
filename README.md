@@ -6,7 +6,7 @@ This project contains additional datasouces for [AutoPoco](http://autopoco.codep
 	Install-Package AutoPoco.DataSources
 
 ## Usage
-An example app is included in the solution which demonstrates the usage of the additional datasources. You can also check the [online version](http://playground.webpirates.nl/autopocodatasources) which shows the usage of each datasource and the corresponding output.
+An example app is included in the solution which demonstrates the usage of the additional datasources. You can check the [online version](http://autopocodatasources.skaele.nl) which shows the usage of each datasource and the corresponding output.
 	
 ## Data sources
 The following datasources are included in the package
@@ -30,6 +30,8 @@ The following datasources are included in the package
 - StreetSource
 - TimeSpanSource
 - UrlSource
+
+We would be happy to add additional data sources through pull requests.
 
 ## License
 All source code is licensed under the [GNU Lesser General Public License](http://www.gnu.org/licenses/lgpl.html)
