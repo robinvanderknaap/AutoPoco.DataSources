@@ -7,13 +7,13 @@ namespace AutoPoco.DataSources
     {
         private readonly Random _random = new Random(1337);
         private int _index;
-        private readonly string _domain;
+        private readonly string _domain = "";
 
         public ExtendedEmailAddressSource() { }
 
         public ExtendedEmailAddressSource(string domain)
         {
-            _domain = domain;
+            _domain = domain ?? "";
         }
 
         public override string Next(IGenerationContext context)
