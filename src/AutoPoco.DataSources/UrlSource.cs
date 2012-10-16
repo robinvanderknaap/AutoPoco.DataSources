@@ -24,6 +24,7 @@ namespace AutoPoco.DataSources
             "twitter.com",
             "qq.com",
             "webpirates.nl",
+            "skaele.nl",
             "msn.com",
             "amazon.com",
             "linkedin.com.",

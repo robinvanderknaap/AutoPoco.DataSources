@@ -29,6 +29,7 @@ namespace AutoPoco.DataSources
                                                            "hotmail.com",
                                                            "aol.com",
                                                            "webpirates.nl",
+                                                           "skaele.nl",
                                                            "yahoo.com"
                                                        };
 
